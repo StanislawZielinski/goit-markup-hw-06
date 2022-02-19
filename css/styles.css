@@ -695,7 +695,7 @@ img {
   text-align: center;
   color: rgba(33, 33, 33, 1);
 }
-.modal-input-label {
+.modal-input-label-text {
   font-size: 12px;
   font-style: normal;
   font-weight: 400;
@@ -703,6 +703,16 @@ img {
   letter-spacing: 0.01em;
   text-align: left;
   color: rgba(117, 117, 117, 1);
+  display: block;
+  margin-top: 10px;
+  margin-bottom: 4px;
+}
+.modal-input {
+  height: 40px;
+  width: 100%;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  background-image: url= "../images/svg/sprite.svg#icon-close-black-18dp)";
 }
 
 .is-hidden {
