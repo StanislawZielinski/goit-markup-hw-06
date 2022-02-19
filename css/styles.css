@@ -712,8 +712,26 @@ img {
   width: 100%;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
+  padding-left: 42px;
 }
-
+.modal-label-box {
+  position: relative;
+  fill: rgba(33, 33, 33, 1);
+}
+.modal-comments {
+  padding: 12px 16px;
+  min-height: 120px;
+  width: 100%;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+}
+.icon-modal {
+  height: 18px;
+  width: 18px;
+  position: absolute;
+  top: 12px;
+  left: 12px;
+}
 .is-hidden {
   visibility: hidden;
   opacity: 0;
