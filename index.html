@@ -488,9 +488,7 @@
   <!-- MODAL WINDOW -->
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
-
         <h3 class="modal-title">Zostaw swoje dane w formularzu poniżej</h3>
-
         <form action="#">
           <label class="modal-input-label">
             <p class="modal-input-label-text">Imię</p>
@@ -519,17 +517,20 @@
               <input type="email" name="email" class="modal-input"> 
             </div>    
           </label>
+          
           <label class="modal-input-label"><p class="modal-input-label-text">Komentarz</p>
             <textarea name="comments" placeholder="Wprowadź tekst" class="modal-comments"></textarea>
           </label>
 
-          <label class="modal-form-policy">
-                <!-- <svg class="icon-check">
-                  <use href="./images/svg/sprite.svg#icon-phone-black-18dp"></use>
-                </svg> -->
-              <input type="checkbox" name="agreement" class="modal-input">
-              <p class="modal-input-agreement-text">Oświadczam iż akceptuję Regulamin i Politykę Prywatności.</p> 
+          <input id="policy-form" type="checkbox" name="policy" class="modal-policy-input visually-hiden">
+          <label for="policy-form" class="modal-form-policy-label">Oświadczam iż akceptuję <a class="policy-link" href="#">Regulamin</a> i <a class="policy-link" href="#">Politykę Prywatności.</a>
           </label>
+
+          <div class="modal-button-box">
+            <button type="button" class="modal-button">
+                Wyślij
+            </button>
+          </div>
         </form>
 
         <button type="button" class="close-btn" data-modal-close>
