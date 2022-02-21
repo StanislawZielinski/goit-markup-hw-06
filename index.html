@@ -492,29 +492,29 @@
         <form action="#">
           <label class="modal-input-label">
             <p class="modal-input-label-text">Imię</p>
-            <div class="modal-label-box">
-                <svg class="icon-modal">
-                  <use href="./images/svg/sprite.svg#icon-person-black-18dp"></use>
-                </svg>
-              <input type="name" name="name" class="modal-input"> 
+            <div class="modal-label-box" role="group" aria-labelledby="name">
+              <input type="name" name="name" class="modal-input" required> 
+              <svg class="icon-modal">
+                <use href="./images/svg/sprite.svg#icon-person-black-18dp"></use>
+              </svg>      
             </div>         
           </label>
 
           <label class="modal-input-label"><p class="modal-input-label-text">Telefon</p>
-            <div class="modal-label-box">
-                <svg class="icon-modal">
-                  <use href="./images/svg/sprite.svg#icon-phone-black-18dp"></use>
-                </svg>
-              <input type="tel" name="phone_nmber" class="modal-input"> 
+            <div class="modal-label-box" role="group" aria-labelledby="tel">
+              <input type="tel" name="phone_nmber" class="modal-input" required>
+              <svg class="icon-modal">
+                <use href="./images/svg/sprite.svg#icon-phone-black-18dp"></use>
+              </svg>
             </div>    
           </label>
 
           <label class="modal-input-label"><p class="modal-input-label-text">Email</p>
-            <div class="modal-label-box">
+            <div class="modal-label-box" role="group" aria-labelledby="email">
+                <input type="email" name="email" class="modal-input" required>
                 <svg class="icon-modal">
                   <use href="./images/svg/sprite.svg#icon-email-black-18dp"></use>
-                </svg>
-              <input type="email" name="email" class="modal-input"> 
+                </svg> 
             </div>    
           </label>
           

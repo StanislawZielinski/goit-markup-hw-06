@@ -518,7 +518,9 @@ img {
   background-color: var(--blackBackground-color);
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
+  outline: none;
 }
+
 .footer-newsletter-box-button {
   display: flex;
   justify-content: space-evenly;
@@ -713,7 +715,6 @@ img {
   position: absolute;
   top: 12px;
   left: 12px;
-  fill: yellow;
 }
 .modal-input {
   height: 40px;
@@ -725,10 +726,11 @@ img {
 }
 .modal-label-box {
   position: relative;
+  fill: rgba(33, 33, 33, 1);
 }
-.modal-input:focus + svg {
-  border-radius: 12px;
-  fill: red;
+
+.modal-input:focus-within ~ .icon-modal {
+  fill: var(--secondary-color);
 }
 .modal-input:focus {
   border-color: var(--secondary-color);
