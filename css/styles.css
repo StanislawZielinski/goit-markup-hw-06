@@ -729,7 +729,7 @@ img {
   fill: rgba(33, 33, 33, 1);
 }
 
-.modal-input:focus-within ~ .icon-modal {
+.modal-input:focus ~ .icon-modal {
   fill: var(--secondary-color);
 }
 .modal-input:focus {
